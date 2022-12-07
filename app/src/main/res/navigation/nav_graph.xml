@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Fragmentlist">
+    <fragment
+        android:id="@+id/Fragmentlist"
+        android:name="com.example.hw8.Fragmentlist"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_Fragmentlist_to_FragmentDetails"
+            app:destination="@id/FragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentDetails"
+        android:name="com.example.hw8.FragmentDetails"
+        android:label="fragment__details"
+        tools:layout="@layout/fragment__details" />
+</navigation>
